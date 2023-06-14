@@ -22,7 +22,6 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
-        <restdocs.version>3.0.0</restdocs.version>
     </properties>
 
     <dependencies>
@@ -97,7 +96,6 @@
         <dependency>
             <groupId>org.springframework.restdocs</groupId>
             <artifactId>spring-restdocs-mockmvc</artifactId>
-            <version>${restdocs.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -154,7 +152,7 @@
                     <dependency>
                         <groupId>org.springframework.restdocs</groupId>
                         <artifactId>spring-restdocs-asciidoctor</artifactId>
-                        <version>${restdocs.version}</version>
+                        <version>${spring-restdocs.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
